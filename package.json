@@ -13,5 +13,17 @@
     "@vimeo/player": "^2.18.0",
     "lodash.throttle": "^4.1.1",
     "simplelightbox": "^2.11.0"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisNarciss/goit-js-hw-08.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThisNarciss/goit-js-hw-08/issues"
   }
 }
