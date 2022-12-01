@@ -8,17 +8,23 @@ const onPlay = function (data) {
 
 player.on("timeupdate", throttle(onPlay, 1000));
 
-const parsedData = JSON.parse(localStorage.getItem("videoplayer-current-time"));
-
-player
-  .setCurrentTime(parsedData.seconds)
-  .then(function (seconds) {
-    seconds = parsedData.seconds;
-  })
-  .catch(function (error) {
-    switch (error.name) {
-      case "RangeError":
-        parsedData.seconds < 0 || parsedData.seconds > parsedData.duration;
-        break;
-    }
-  });
+try {
+  const parsedData = JSON.parse(
+    localStorage.getItem("videoplayer-current-time")
+  );
+  player
+    .setCurrentTime(parsedData.seconds)
+    .then(function (seconds) {
+      seconds = parsedData.seconds;
+    })
+    .catch(function (error) {
+      switch (error.name) {
+        case "RangeError":
+          parsedData.seconds < 0 || parsedData.seconds > parsedData.duration;
+          break;
+      }
+    });
+} catch (error) {
+  error.name;
+  error.message;
+}
