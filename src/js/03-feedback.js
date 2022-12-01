@@ -1,18 +1,17 @@
 const formRef = document.querySelector(".feedback-form");
 const throttle = require("lodash.throttle");
 
-formRef.addEventListener("input", onTextareaInput);
+formRef.addEventListener("input", throttle(onTextareaInput, 500));
 formRef.addEventListener("submit", onFormSubmit);
 
 fillInTextarea();
 
-function onTextareaInput(event) {
-  const feedbackArr = {
-    email: event.currentTarget.elements.email.value,
-    message: event.currentTarget.elements.message.value,
-  };
+const formData = {};
 
-  localStorage.setItem("feedback-form-state", JSON.stringify(feedbackArr));
+function onTextareaInput(event) {
+  formData[event.target.name] = event.target.value;
+  formData[event.target.name] = event.target.value;
+  localStorage.setItem("feedback-form-state", JSON.stringify(formData));
 }
 
 function onFormSubmit(event) {
