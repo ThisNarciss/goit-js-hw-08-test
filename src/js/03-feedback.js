@@ -26,7 +26,7 @@ function onFormSubmit(event) {
 }
 
 function fillInTextarea() {
-    const Data = localStorage.getItem("feedback-form-state");
-if (Data)
-    
+  const Data = localStorage.getItem("feedback-form-state");
+  if (Data) {
+  }
 }
