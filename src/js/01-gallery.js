@@ -2,7 +2,7 @@
 import { galleryItems } from "./gallery-items";
 // Change code below this line
 
-console.log(galleryItems);
+const gallery = document.querySelector("div.gallery");
 
 const createGallery = (array) => {
   const createGalleryItem = array
@@ -17,6 +17,9 @@ const createGallery = (array) => {
 };
 
 createGallery(galleryItems);
+
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 const carousel = new SimpleLightbox(".gallery a", {
   captionsData: "alt",

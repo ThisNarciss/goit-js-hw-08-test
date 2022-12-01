@@ -1,9 +1,10 @@
 {
   "name": "my-project",
   "source": "src/index.html",
+  "homepage": "https://ThisNarciss.github.io/goit-js-hw-08/",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "devDependencies": {
     "parcel": "^2.8.0"
