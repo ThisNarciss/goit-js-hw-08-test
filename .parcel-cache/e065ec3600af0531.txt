@@ -3,7 +3,7 @@
 89F:\Work\JavaScript\goit-js-hw-08-test\node_modules\type-fest\source\conditional-keys.d.ts133155908407019384 0
 67F:\Work\JavaScript\goit-js-hw-08-test\node_modules\lmdb\src\txn.cpp133155908499360944 0
 87F:\Work\JavaScript\goit-js-hw-08-test\node_modules\css-tree\lib\syntax\node\Selector.js133155908514064193 0
-50F:\Work\JavaScript\goit-js-hw-08-test\package.json133155912161557026 0
+50F:\Work\JavaScript\goit-js-hw-08-test\package.json133155927745052716 0
 133F:\Work\JavaScript\goit-js-hw-08-test\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-main-directory\nested133155908430767807 1
 78F:\Work\JavaScript\goit-js-hw-08-test\node_modules\fs-extra\lib\util\buffer.js133155908430087599 0
 80F:\Work\JavaScript\goit-js-hw-08-test\node_modules\terser\lib\compress\inline.js133155908431289210 0
